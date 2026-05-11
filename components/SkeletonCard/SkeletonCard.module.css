@@ -1,0 +1,44 @@
+@reference "../../app/globals.css";
+
+.card {
+  @apply bg-light rounded-xl p-6;
+}
+
+.shimmer {
+  @apply bg-lighter rounded animate-pulse;
+}
+
+.header {
+  @apply flex gap-4 mb-6;
+}
+
+.avatar {
+  @apply shrink-0 rounded-full w-16 h-16;
+}
+
+.headerLines {
+  @apply flex flex-col justify-center gap-3 flex-1;
+}
+
+.lineLong {
+  @apply h-3 rounded;
+  width: 75%;
+}
+
+.lineMedium {
+  @apply h-3 rounded;
+  width: 55%;
+}
+
+.body {
+  @apply flex flex-col gap-4;
+}
+
+.lineFull {
+  @apply h-3 rounded w-full;
+}
+
+.lineShort {
+  @apply h-3 rounded;
+  width: 45%;
+}
