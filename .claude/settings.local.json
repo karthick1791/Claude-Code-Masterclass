@@ -4,7 +4,30 @@
       "Bash(npm run *)",
       "Bash(git status)",
       "Bash(git commit -m ' *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(ls *)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Read",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo \"hello\""
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node -e \"process.stdin.resume();let d='';process.stdin.on('data',c=>d+=c);process.stdin.on('end',()=>{require('fs').writeFileSync('C:/Users/Karthick/git/Claude-Code-Masterclass/tool_usage.json',d)})\""
+          }
+        ]
+      }
     ]
   }
 }

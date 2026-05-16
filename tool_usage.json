@@ -1,0 +1,45 @@
+{
+    "session_id": "fa24772a-53b6-4e8c-add7-07491894b421",
+    "transcript_path": "C:\\Users\\Karthick\\.claude\\projects\\C--Users-Karthick-git-Claude-Code-Masterclass\\fa24772a-53b6-4e8c-add7-07491894b421.jsonl",
+    "cwd": "C:\\Users\\Karthick\\git\\Claude-Code-Masterclass",
+    "permission_mode": "default",
+    "effort": {
+        "level": "high"
+    },
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+        "file_path": "C:\\Users\\Karthick\\git\\Claude-Code-Masterclass\\.claude\\commands\\commit-message.md",
+        "old_string": "---\n\n## Input:",
+        "new_string": "---\n\n<!-- created by Karthick -->\n\n## Input:",
+        "replace_all": false
+    },
+    "tool_response": {
+        "filePath": "C:\\Users\\Karthick\\git\\Claude-Code-Masterclass\\.claude\\commands\\commit-message.md",
+        "oldString": "---\n\n## Input:",
+        "newString": "---\n\n<!-- created by Karthick -->\n\n## Input:",
+        "originalFile": "---\ndescription: Create a git commit message by analyzing git diffs\nallowed-tools: Bash(git status:*), Bash(git diff --staged), Bash(git commit:*)\n---\n\n## Input:\n\n- JIRA ID argument: $ARGUMENTS (use this as a prefix in the commit message if provided)\n\n## Context:\n\n- current git status: !`git status`\n- current git diff: !`git diff --staged`\n\n## Your task:\n\nAnalyze above staged git changes and create a commit message. Use present tense and explain \"why\" something has changed, not just \"what\" has changed.\n\nIf a JIRA ID was provided in `$ARGUMENTS`, prepend it to the summary line.\n\n## Commit message format:\n\nWithout JIRA ID:\n```\n<type>(<scope>): <short summary>\n\n<optional body — explain motivation, not mechanics>\n```\n\nWith JIRA ID:\n```\n<JIRA-ID> <type>(<scope>): <short summary>\n\n<optional body — explain motivation, not mechanics>\n```\n\n**Types:** `feat`, `fix`, `refactor`, `style`, `test`, `docs`, `chore`\n\n**Rules:**\n- Summary line: 50 chars or fewer, no period at the end\n- Body: wrap at 72 chars, explain *why* not *what*\n- Scope is optional; use the affected module, route, or component name\n\n## Output:\n1. Show summary of changes currently changed\n2. Ask for confirmation before committing\n\nDO NOT auto-commit - wait for user approval, only commit if the user says so.\n",
+        "structuredPatch": [
+            {
+                "oldStart": 3,
+                "oldLines": 6,
+                "newStart": 3,
+                "newLines": 8,
+                "lines": [
+                    " allowed-tools: Bash(git status:*), Bash(git diff --staged), Bash(git commit:*)",
+                    " ---",
+                    " ",
+                    "+<!-- created by Karthick -->",
+                    "+",
+                    " ## Input:",
+                    " ",
+                    " - JIRA ID argument: $ARGUMENTS (use this as a prefix in the commit message if provided)"
+                ]
+            }
+        ],
+        "userModified": false,
+        "replaceAll": false
+    },
+    "tool_use_id": "toolu_01C2VBbybeQyQjbxoLHKTVeu",
+    "duration_ms": 41
+}

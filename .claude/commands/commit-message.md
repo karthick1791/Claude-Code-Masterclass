@@ -3,6 +3,12 @@ description: Create a git commit message by analyzing git diffs
 allowed-tools: Bash(git status:*), Bash(git diff --staged), Bash(git commit:*)
 ---
 
+<!-- created by Karthick -->
+
+## Input:
+
+- JIRA ID argument: $ARGUMENTS (use this as a prefix in the commit message if provided)
+
 ## Context:
 
 - current git status: !`git status`
@@ -12,10 +18,20 @@ allowed-tools: Bash(git status:*), Bash(git diff --staged), Bash(git commit:*)
 
 Analyze above staged git changes and create a commit message. Use present tense and explain "why" something has changed, not just "what" has changed.
 
+If a JIRA ID was provided in `$ARGUMENTS`, prepend it to the summary line.
+
 ## Commit message format:
 
+Without JIRA ID:
 ```
 <type>(<scope>): <short summary>
+
+<optional body — explain motivation, not mechanics>
+```
+
+With JIRA ID:
+```
+<JIRA-ID> <type>(<scope>): <short summary>
 
 <optional body — explain motivation, not mechanics>
 ```
