@@ -1,0 +1,2 @@
+# Prompts used
+- Let's spec the authentication forms on the /login and /signup pages. They need email and password fields, a 'hide password' icon and a submit button (signup/login). The forms should only log details to the console for now, when they are simulated. Wwe should be able to easily switch between the two forms.
