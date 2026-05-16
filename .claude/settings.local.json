@@ -5,7 +5,9 @@
       "Bash(git status)",
       "Bash(git commit -m ' *)",
       "Bash(git push *)",
-      "Bash(ls *)"
+      "Bash(ls *)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Karthick\\\\git\\\\Claude-Code-Masterclass\" -Recurse -Directory -Filter \"app\")",
+      "Bash(Select-Object -ExpandProperty FullName)"
     ]
   },
   "hooks": {

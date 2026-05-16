@@ -1,0 +1,38 @@
+@reference "../../app/globals.css";
+
+.form {
+  @apply mt-8 flex flex-col gap-5 max-w-sm mx-auto;
+}
+
+.field {
+  @apply flex flex-col gap-1;
+}
+
+.field label {
+  @apply text-sm font-medium text-heading;
+}
+
+.field input {
+  @apply w-full bg-lighter text-heading rounded-lg px-3 py-2 outline-none
+    border border-transparent focus:border-primary transition-colors duration-200;
+}
+
+.inputWrapper {
+  @apply relative flex items-center;
+}
+
+.inputWrapper input {
+  @apply pr-10;
+}
+
+.toggle {
+  @apply absolute right-3 text-body hover:text-heading transition-colors duration-200 cursor-pointer;
+}
+
+.switchLink {
+  @apply mt-6 text-center text-sm;
+}
+
+.switchLink a {
+  @apply text-primary hover:text-secondary transition-colors duration-200;
+}
