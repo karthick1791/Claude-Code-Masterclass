@@ -7,7 +7,10 @@
       "Bash(git push *)",
       "Bash(ls *)",
       "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Karthick\\\\git\\\\Claude-Code-Masterclass\" -Recurse -Directory -Filter \"app\")",
-      "Bash(Select-Object -ExpandProperty FullName)"
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "mcp__context7__query-docs",
+      "mcp__firebase__firebase_get_environment",
+      "mcp__firebase__firebase_login"
     ]
   },
   "hooks": {
