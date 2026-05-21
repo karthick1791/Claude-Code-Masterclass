@@ -10,7 +10,9 @@
       "Bash(Select-Object -ExpandProperty FullName)",
       "mcp__context7__query-docs",
       "mcp__firebase__firebase_get_environment",
-      "mcp__firebase__firebase_login"
+      "mcp__firebase__firebase_login",
+      "Bash(npx tsc *)",
+      "Bash(grep *)"
     ]
   },
   "hooks": {
